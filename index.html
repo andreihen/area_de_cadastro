@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Cadastro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Início</li>
+            <li class="active">Formulário</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+</header>
+    <form method="get">
+        <h1>Cadastro de Alunos</h1>
+        <h2>Dados do Aluno</h2>
+        <div class="dados_aluno">
+            <div class="da_1">
+                <div class="da_items">
+                    <label for="promptuary">Prontuário:</label>
+                    <input type="text" name="Prontuário" id="promptuary" required autofocus>
+                </div>
+                <div class="da_items">
+                    <label for="user_name">Nome:</label>
+                    <input type="text" name="Nome" id="user_name" required>
+                </div>
+                <div class="da_items">
+                    <label for="birthday">Data Nascimento:</label>
+                    <input type="date" name="Data de Nascimento" id="birthday" placeholder="dd/mm/aaaa" required>
+                </div>
+                <div class="da_items">
+                    <label for="gender">Sexo:</label>
+                    <select name="Sexo" id="gender" required>
+                        <option disabled selected class="disable-option"></option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="another">Outro</option>
+                        <option value="n-d">Prefiro não dizer</option>
+                    </select>
+                </div>
+                <div class="da_items">
+                    <label for="course">Curso:</label>
+                    <select name="Curso" id="course" required>
+                        <option value="none" class="disable-option"></option>
+                        <option value="crs_mec">Mecânica</option>
+                        <option value="crs_ds">Desenvolvimento de Sistemas</option>
+                        <option value="crs_adm">Administração</option>
+                        <option value="crs_jd">Jogos Digitais</option>
+                        <option value="crs_rh">Recursos Humanos</option>
+                        <option value="crs_em">Ensino Médio</option>
+                    </select>    
+                </div>
+            </div>
+            <div class="da_2">
+                <div class="da_items">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="CPF" id="cpf" minlength="11" maxlength="11" required>
+                </div>
+                <div class="da_items">
+                    <label for="rg">RG:</label>
+                    <input type="text" name="RG" id="rg" minlength="8" maxlength="13" required>
+                </div>
+                <div class="da_items">
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" required>
+                </div>
+                <div class="da_items">
+                <label for="cel">Celular:</label>
+                <input type="tel" name="celular" id="cel" required>
+                </div>
+                <div class="da_items">
+                <label for="email">E-mail:</label>
+                <input type="email" name="e-mail" id="email" required placeholder="@">
+                </div>
+            </div>
+        </div>
+        <h2>Dados do Responsável</h2>
+        <div class="dados_responsaveis">
+            <div class="dr_1">
+                <div class="da_items">
+                    <label for="resp_name">Nome:</label>
+                    <input type="text" name="Nome do Responsável" id="resp_name" required>
+                </div>
+                <div class="da_items">
+                    <label for="resp_email">E-mail:</label>
+                    <input type="email" name="e-mail do responsável" id="resp_email" required placeholder="@">
+                </div>
+            </div>
+            <div class="dr_2">
+                <div class="da_items">
+                    <label for="resp_cpf">CPF:</label>
+                    <input type="text" name="CPF do Responsável" id="resp_cpf" minlength="11" maxlength="11" required>
+                </div>
+                <div class="da_items">
+                    <label for="resp_birthday">Dt Nasc:</label>
+                    <input type="date" name="Data de Nascimento Responsável" id="resp_birthday" placeholder="dd/mm/aaaa" required>
+                </div>
+            </div>
+            <div class="dr_3">
+                <div class="da_items">
+                    <label for="rg">RG:</label>
+                    <input type="text" name="RG" id="rg" minlength="8" maxlength="13" required>
+                </div>
+                <div class="da_items">
+                    <label for="resp_cel">Celular:</label>
+                    <input type="tel" name="celular" id="resp_cel" required>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+        <button type="submit" id="submit">Enviar</button>
+        <button type="reset" id="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
